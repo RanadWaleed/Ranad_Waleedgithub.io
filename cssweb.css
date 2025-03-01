@@ -1,0 +1,364 @@
+
+*{
+    font-family: 'Potta One', cursive;
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100;
+    padding: 2%;
+    backdrop-filter: blur(5px);  
+}
+.logo img {
+     width:130px;
+     height:auto;
+    }
+
+.navBar a {
+    text-decoration: none;
+    color: #6f9598;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+.navBar a:hover, .navBar a.active {
+color:#124237;
+border-bottom: 2px solid #124237;
+
+}
+
+body{
+    background-color: #fffdf7;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.section {
+
+    display: flex;
+    flex-direction: row;
+    padding: 8% 8%;
+    width:100%;
+    height: 100%;
+    position: relative; 
+}
+
+#intro{
+
+    position:relative;
+    background-image: url('../images/background.png'); 
+    background-size:cover ;
+    background-position: center;
+    margin-top: 0%;
+    padding: 20% 8%;
+}
+
+#intro_Text_Blur{
+
+    z-index: 1;
+    align-items: center;
+    letter-spacing: 2px;
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+#intro h1, #About_Me h1, #Education h1,#Projects h1{  
+    font-size: 3rem; 
+    color : #4b6827;
+}
+
+#intro h4 {
+    font-size: 1.5rem; 
+    color: #000000;
+    font-style: italic; 
+}
+#intro p{
+    font-family: cursive;
+    font-size: 1.6rem;
+    color: #4d3115;
+    margin-bottom: 10px;
+}
+
+/* the second section**/
+#About_Me{
+position:relative;
+background-color: #fbf0be;
+height: auto;
+} 
+
+.About_Me_Container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.About_Me_Text{
+    background-color: #caae90c6;
+    border-radius: 2%;
+    padding: 20px ;
+    margin-bottom:2%;
+    border: 8px solid #fff9f4;
+    flex: 1;
+}
+
+#About_Me p {
+    font-size: 1.2rem;
+    color: #4d3115;
+    margin-bottom: 10px;
+}
+
+#About_Me h4  {
+    font-size: 1.5rem;
+    color: #3a220a;
+    margin-bottom: 10px;
+}
+
+
+
+#About_Me img{
+    width: 450px;;
+    height:auto;
+
+}
+.Line{
+     width: 80%;
+     height: 2px;
+     background-color: #4d3013;
+     margin: 5% 0%;
+}
+
+.icons{
+    display: flex;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+.Icon_Link{
+    color: #1a8c8c;
+    background-color: #f9f6ea;
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* the third section**/
+#Education{
+    background-color:#ebe9be;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+   
+}
+.Education_Container{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.Right_Side h3 {
+    font-size: 2rem;
+    color: #2e2419;
+    margin-bottom: 15px;
+}
+.Certificates_List,.Right_Side p{
+    font-size: 1.3rem;
+    color:#47382a ;
+    margin-bottom: 10px;
+}
+.Education_Image img{
+    border: 5px solid #4b6827;
+    width:350px ;
+    height: auto;
+}
+
+
+
+/* the fourth */
+#Projects{
+    background-color:#fbf0be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    height: 100%;
+}
+#Projects h1{
+    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+.project_Row{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin-bottom: 20px; 
+    justify-content:center;
+    width: 100%; 
+}
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    margin-bottom: 0px;
+}
+
+
+.project-image {
+    flex: 1; 
+    overflow: hidden;
+}
+.project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    padding: 2%;
+}
+
+
+.project-info { 
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-info .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #685d52;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-info .project-link:hover {
+    background-color: #caae90;
+}
+
+footer{
+    background-color: #617d3e;
+    padding: 2%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+
+/* media to make my page responsive**/
+
+@media (max-width: 992px) {
+    .project-card {
+        flex-direction: column; 
+        flex: 1 1 45%; 
+        max-width: 45%; 
+    
+    }
+
+    .project-image {
+        flex: none; 
+        height: 200px; 
+    }
+    #About_Me img {
+        width:300px ;
+        height: auto;
+    }
+    
+    .Education_Image img {
+        width:300px ;
+        height: auto;
+    }
+    .Right_Side h3{
+        font-size: 1.5rem;
+    }
+
+    .Right_Side .Certificates_List,.Right_Side p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+    }
+
+    #intro {
+        background-size: cover; 
+        background-attachment: scroll; 
+    }
+    #intro h1, #About_Me h1, #Education h1,#Projects h1 {
+      font-size: 3rem;
+    }
+
+    .About_Me_Text, .About_Me_Image {
+        width: 100%;
+    }
+    #About_Me, #Education {
+        padding: 4% 6%;
+    }
+    .Education_Image img {
+        width:240px ;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .project-info {
+        padding: 15px;
+    }
+
+    .project-info h3 {
+        font-size: 1.25rem; 
+    }
+
+    .project-info p {
+        font-size: 0.9rem; 
+    }
+
+    .Education_Image img {
+        width:180px ;
+        height: auto;
+    }
+
+    #About_Me img {
+        width:200px ;
+        height: auto;
+    }
+}
+
